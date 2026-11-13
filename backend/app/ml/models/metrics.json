@@ -1,0 +1,36 @@
+{
+  "model_name": "RandomForestClassifier",
+  "model_type": "Synthetic Marine Decision Model",
+  "notice": "Trained exclusively on synthetic development data for software prototype evaluation. Not calibrated with physical in-situ marine sensors.",
+  "dataset_size": 6000,
+  "train_samples": 4800,
+  "test_samples": 1200,
+  "evaluation_metrics": {
+    "accuracy": 0.9975,
+    "precision": 1.0,
+    "recall": 0.9896,
+    "f1_score": 0.9948,
+    "confusion_matrix": {
+      "true_negative": 912,
+      "false_positive": 0,
+      "false_negative": 3,
+      "true_positive": 285
+    }
+  },
+  "feature_importances": {
+    "cloud_cover_percent": 0.1068,
+    "solar_irradiance": 0.1035,
+    "underwater_light_level": 0.26,
+    "turbidity": 0.2279,
+    "time_of_day": 0.0442,
+    "low_light_duration_minutes": 0.2576
+  },
+  "features_used": [
+    "cloud_cover_percent",
+    "solar_irradiance",
+    "underwater_light_level",
+    "turbidity",
+    "time_of_day",
+    "low_light_duration_minutes"
+  ]
+}
